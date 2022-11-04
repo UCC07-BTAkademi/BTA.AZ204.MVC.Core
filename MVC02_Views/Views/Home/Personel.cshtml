@@ -1,0 +1,20 @@
+﻿@model MVC02_Views.Models.Personel
+
+@{
+}
+
+@using (Html.BeginForm("Personel","Home",FormMethod.Post))
+{
+    <label>Adı :</label>
+    @Html.TextBoxFor(model => model.Ad)<br />
+    <label>Soyadı :</label>
+    @Html.TextBoxFor(model => model.Soyad)<br />
+    <label>Yaşı :</label>
+    @Html.TextBoxFor(model => model.Yas)<br />
+
+    <button type="submit">Gönder...</button>
+
+
+
+
+}

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Ogrenci.Models.Ogrenciler>
+
+
+<div>
+    <h3 class="text-center">Öğrenciler Listesi</h3>
+    <hr />
+
+    @{
+        // bu araya blok halinde c# kodlarını yazabilirsiniz...
+    }
+
+    @{
+        Ogrenciler ogrenci1 = new Ogrenciler(1, "Ümit", "Karaçivi", 2);
+        Ogrenciler ogrenci2 = new Ogrenciler(2, "Barış", "Eren", 1);
+        Ogrenciler ogrenci3 = new Ogrenciler(3, "Büşra", "Gülpınar", 2);
+        Ogrenciler ogrenci4 = new Ogrenciler(4, "Sercan", "Kolcuoğlu", 3);
+        Ogrenciler ogrenci5 = new Ogrenciler(5, "Hatice", "Dönmez", 1);
+        Ogrenciler ogrenci6 = new Ogrenciler(6, "Elif", "Arslan", 1);
+        Ogrenciler ogrenci7 = new Ogrenciler(7, "Semiha", "Özdemir", 2);
+
+        var liste = new List<Ogrenciler>();
+
+        liste.Add(ogrenci1);
+        liste.Add(ogrenci2);
+        liste.Add(ogrenci3);
+        liste.Add(ogrenci4);
+        liste.Add(ogrenci5);
+        liste.Add(ogrenci6);
+        liste.Add(ogrenci7);
+
+
+        foreach (var ogrenci in liste)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        Numara : @ogrenci.Numara <br />
+                        Ad : @ogrenci.Ad <br />
+                        Soyad : @ogrenci.Soyad <br />
+                        Sınıfı : @ogrenci.Sinif <br />
+                    </div>
+
+                </div>
+
+            </div>
+        }
+    }
+
+
+
+
+</div>
