@@ -33,13 +33,24 @@ namespace MVC02_Views.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Personel()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult Personel(Personel personel)
         {
             if (ModelState.IsValid)
             {
                 string personelBilgi="";
 
-                personelBilgi="Personelin Adı : " + personel.Ad + "- Personelin Soyadı : " + personel.Soyad + "- Personelin Yaşı : " + personel.Yas.ToString();  
+                personelBilgi="Personelin bilgileri (Ad, Soyad, Yaş) : " + personel.Ad + " " + personel.Soyad + " - " + personel.Yas.ToString(); 
+                
+                ViewBag.Mesaj=personelBilgi; 
+                
+                
 
             }
 

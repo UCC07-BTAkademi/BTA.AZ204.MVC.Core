@@ -6,11 +6,17 @@
 @using (Html.BeginForm("Personel","Home",FormMethod.Post))
 {
     <label>Adı :</label>
-    @Html.TextBoxFor(model => model.Ad)<br />
+    @Html.TextBoxFor(model => model.Ad)<br /><br />
     <label>Soyadı :</label>
-    @Html.TextBoxFor(model => model.Soyad)<br />
+    @Html.TextBoxFor(model => model.Soyad)<br /><br />
     <label>Yaşı :</label>
-    @Html.TextBoxFor(model => model.Yas)<br />
+    @Html.TextBoxFor(model => model.Yas)<br /><br />
+
+    <b>@Html.Label("",(string)ViewBag.Mesaj,new { @class = "width:400px;color:red" })</b>
+
+
+    <br />
+    <br />
 
     <button type="submit">Gönder...</button>
 
