@@ -1,0 +1,44 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Layout Bölümlü</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    @* menü div *@
+    <div>
+
+        @* Link Text, Action, Controller *@
+        @Html.ActionLink("Ana Sayfa","Index","Home") |
+        @Html.ActionLink("Hakkımızda","About","Home") |
+        @Html.ActionLink("İletişim","Contact","Home")
+        <br />
+        <br />
+    </div>
+    <div class="mystyle4">
+        @RenderSection("SayfaAdi")
+    </div>
+
+    <div>
+        <div class="mystyle5">
+            @RenderSection("SerbestIcerik")
+        </div>
+        <div class="mystyle6">
+            Bu alan hep sabit kalacak
+
+        </div>
+    </div>
+    
+    <div style="clear:both;"></div>
+
+    <div class="mystyle7">
+        @RenderSection("Footer")
+
+
+    </div>
+
+</body>
+</html>
