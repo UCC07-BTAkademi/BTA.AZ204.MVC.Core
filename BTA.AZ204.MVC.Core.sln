@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC01", "MVC01\MVC01.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Layouts", "03.Layouts\03.Layouts.csproj", "{1188176F-2C22-4086-B8AD-72394EB6307D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.LayoutsBolumlu", "04.LayoutsBolumlu\04.LayoutsBolumlu.csproj", "{E10ACBCD-AF6A-4552-9F41-5FE6B57A4214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.LayoutsBolumlu", "04.LayoutsBolumlu\04.LayoutsBolumlu.csproj", "{E10ACBCD-AF6A-4552-9F41-5FE6B57A4214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.PartialView", "05.PartialView\05.PartialView.csproj", "{4A337A56-8967-497E-B7DF-8BE3F3C1328D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E10ACBCD-AF6A-4552-9F41-5FE6B57A4214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E10ACBCD-AF6A-4552-9F41-5FE6B57A4214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E10ACBCD-AF6A-4552-9F41-5FE6B57A4214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A337A56-8967-497E-B7DF-8BE3F3C1328D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A337A56-8967-497E-B7DF-8BE3F3C1328D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A337A56-8967-497E-B7DF-8BE3F3C1328D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A337A56-8967-497E-B7DF-8BE3F3C1328D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
