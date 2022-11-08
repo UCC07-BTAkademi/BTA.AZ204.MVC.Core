@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Student - Home Page";
+}
+
+<div >
+
+
+    <h1><label>Sınıfımızdaki toplam öğrenci sayısı : </label> @ViewBag.TotalStudents</h1>
+    <br />
+    <br />
+    <h3><label>Öğrencilerin bilgileri...</label></h3>
+    <br />
+    <ul>
+        @foreach (var item in ViewData["students"] as IList<Student>)
+        {
+            <li>
+                @(item.StudentId + " "+item.StudentName + " " + item.Age)
+            </li>
+        }
+    </ul>
+
+
+
+</div>
