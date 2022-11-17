@@ -10,10 +10,12 @@ namespace DBFirst_EF.Models
             Orders = new HashSet<Order>();
         }
 
+        // Normal tablodaki fieldlar
         public int ShipperId { get; set; }
         public string CompanyName { get; set; } = null!;
         public string? Phone { get; set; }
 
+        // Bağlantılı olduğu diğer tablo veya tablolar
         public virtual ICollection<Order> Orders { get; set; }
     }
 }

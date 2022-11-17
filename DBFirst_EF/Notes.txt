@@ -1,8 +1,8 @@
 ﻿1. Öncelikle aşağıdaki paketleri projeye dahil edelim
 ----------------------------------------------------
 Microsoft.EntityFrameworkCore.SqlServer
-Microsoft.EntityFrameworkCore.Design
 Microsoft.EntityFrameworkCore.Tools
+Microsoft.Extensions.Configuration
 Microsoft.VisualStudio.Web.CodeGeneration.Design
 
 2. Hazır veritabanının projeye dahil edilmesi
