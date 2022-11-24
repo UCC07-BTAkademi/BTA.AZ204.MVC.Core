@@ -21,10 +21,29 @@ namespace DBFirst_EF.Controllers
         // GET: Territories
         public async Task<IActionResult> Index()
         {
-            var northwindContext = _context.Territories.Include(t => t.Region);
+            var northwindContext = _context.Territories
+                .Include(t => t.Region);
+
             return View(await northwindContext.ToListAsync());
         }
 
+        [NonAction]
+        private dynamic ToRegionsSelectList(DbSet<Region> regions, string valueField, string textField)
+        {
+            List<SelectListItem> list = new List<SelectListItem>();
+
+            foreach (var item in regions)
+            {
+                list.Add(new SelectListItem()
+                {
+                    Text = item.RegionDescription,
+                    Value = item.RegionId.ToString()
+                });
+            }
+
+            return new SelectList(list, "Value", "Text");
+
+        }
         // GET: Territories/Details/5
         public async Task<IActionResult> Details(string id)
         {
@@ -71,6 +90,13 @@ namespace DBFirst_EF.Controllers
         // GET: Territories/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
+            var regions = _context.Regions.ToList();
+
+            if (regions != null)
+            {
+                ViewBag.RegionList = ToRegionsSelectList(_context.Regions, "RegionId", "RegionDescription");
+            }
+
             if (id == null || _context.Territories == null)
             {
                 return NotFound();
@@ -81,7 +107,9 @@ namespace DBFirst_EF.Controllers
             {
                 return NotFound();
             }
+
             ViewData["RegionId"] = new SelectList(_context.Regions, "RegionId", "RegionId", territory.RegionId);
+            
             return View(territory);
         }
 

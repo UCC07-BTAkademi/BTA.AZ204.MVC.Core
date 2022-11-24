@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.PartialView", "05.Partia
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.ViewBagViewData", "06.ViewBagViewData\06.ViewBagViewData.csproj", "{98CFE7AB-F957-43DF-A24D-4900D2B9DB42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirst_EF", "DBFirst_EF\DBFirst_EF.csproj", "{EC6136F6-8F93-4213-9A18-97CE3F4213DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBFirst_EF", "DBFirst_EF\DBFirst_EF.csproj", "{EC6136F6-8F93-4213-9A18-97CE3F4213DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoAPI", "TodoAPI\TodoAPI.csproj", "{1F20A33A-4A09-4C38-92DE-242094AD4484}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{EC6136F6-8F93-4213-9A18-97CE3F4213DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC6136F6-8F93-4213-9A18-97CE3F4213DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC6136F6-8F93-4213-9A18-97CE3F4213DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

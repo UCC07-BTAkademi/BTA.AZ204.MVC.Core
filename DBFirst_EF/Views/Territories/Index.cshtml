@@ -23,13 +23,13 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.TerritoryDescription)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Region.RegionId)
+                @Html.DisplayFor(modelItem => item.Region.RegionDescription)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.TerritoryId">Edit</a> |
@@ -37,6 +37,6 @@
                 <a asp-action="Delete" asp-route-id="@item.TerritoryId">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
