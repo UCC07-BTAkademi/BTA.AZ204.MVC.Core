@@ -8,7 +8,7 @@ namespace ToDoAPI.Models
         private static ConcurrentDictionary<string, TodoItem> _todos =
               new ConcurrentDictionary<string, TodoItem>();
 
-        public TodoRepository()
+        public TodoRepository() // Constructor
         {
             Add(new TodoItem { Name = "Çocuğu okuldan al" });
         }

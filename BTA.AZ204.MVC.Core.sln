@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.ViewBagViewData", "06.Vi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBFirst_EF", "DBFirst_EF\DBFirst_EF.csproj", "{EC6136F6-8F93-4213-9A18-97CE3F4213DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoAPI", "TodoAPI\TodoAPI.csproj", "{1F20A33A-4A09-4C38-92DE-242094AD4484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoAPI", "TodoAPI\TodoAPI.csproj", "{1F20A33A-4A09-4C38-92DE-242094AD4484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindWebAPI", "NorthwindWebAPI\NorthwindWebAPI.csproj", "{B80EC490-E966-4269-B259-C1DC7800F7FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
