@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ogrenci", "Ogrenci\Ogrenci.csproj", "{23150834-C44B-494B-B8FF-759EA65CF64C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC02_Views", "MVC02_Views\MVC02_Views.csproj", "{1149C806-5AD6-4F8C-996C-5ECD82A67AC6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.RazorViewEngine", "02.RazorViewEngine\02.RazorViewEngine.csproj", "{269DFB08-0A46-4691-9517-6F674C037FCD}"
@@ -23,18 +21,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBFirst_EF", "DBFirst_EF\DB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoAPI", "TodoAPI\TodoAPI.csproj", "{1F20A33A-4A09-4C38-92DE-242094AD4484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindWebAPI", "NorthwindWebAPI\NorthwindWebAPI.csproj", "{B80EC490-E966-4269-B259-C1DC7800F7FC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23150834-C44B-494B-B8FF-759EA65CF64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23150834-C44B-494B-B8FF-759EA65CF64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23150834-C44B-494B-B8FF-759EA65CF64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23150834-C44B-494B-B8FF-759EA65CF64C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1149C806-5AD6-4F8C-996C-5ECD82A67AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1149C806-5AD6-4F8C-996C-5ECD82A67AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1149C806-5AD6-4F8C-996C-5ECD82A67AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,10 +63,6 @@ Global
 		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F20A33A-4A09-4C38-92DE-242094AD4484}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B80EC490-E966-4269-B259-C1DC7800F7FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

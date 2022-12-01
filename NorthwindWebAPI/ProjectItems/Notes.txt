@@ -8,6 +8,7 @@ Microsoft.AspNetCore.Identity.EntityFrameworkCore 6.0.10
 AutoMapper
 Automapper.Extensions.Microsoft.DependencyInjection
 Swashbuckle.AspNetCore
+Microsoft.jQuery.Unobtrusive.Validation (Data Annotations)
 
 2. Hazır veritabanının projeye dahil edilmesi
 ----------------------------------------------

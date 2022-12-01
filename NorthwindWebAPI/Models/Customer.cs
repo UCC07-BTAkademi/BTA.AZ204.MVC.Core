@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace NorthwindWebAPI.Models
 {
@@ -11,7 +14,14 @@ namespace NorthwindWebAPI.Models
             CustomerTypes = new HashSet<CustomerDemographic>();
         }
 
+        [Key]
+        [Required(ErrorMessage = "Bu bilgi boş bırakılamaz...Lütfen kontrol ediniz...")]
+        [StringLength(5, ErrorMessage = "Bu bilgi en fazla {1} karakter uzunluğunda olmalıdır...")]
+
         public string CustomerId { get; set; } = null!;
+
+        [Required(ErrorMessage = "Bu bilgi boş bırakılamaz...Lütfen kontrol ediniz...")]
+        [StringLength(40, ErrorMessage = "Bu bilgi en fazla {1} karakter uzunluğunda olmalıdır...")]
         public string CompanyName { get; set; } = null!;
         public string? ContactName { get; set; }
         public string? ContactTitle { get; set; }

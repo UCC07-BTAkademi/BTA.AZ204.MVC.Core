@@ -40,7 +40,7 @@ namespace NorthwindWebAPI.Controllers
         {
             // LINQ : Language Integrated Query
             var status = _context.Users.Where
-                (m => m.UserName == _user.UserName && m.UserPass == _user.UserPass).FirstOrDefault();
+                (m =>m.UserName == _user.UserName && m.UserPass == _user.UserPass).FirstOrDefault();
 
             if (status == null)
             {
