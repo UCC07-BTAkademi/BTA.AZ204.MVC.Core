@@ -14,3 +14,7 @@ PM(Package Manager) ile;
 Çeşitli DB güncellemelerinden sonra da aşağıdaki kısmın çalıştırılıp son halinin projeye yansıtılması yapılmalıdır
 
 * PM> Scaffold-DbContext "Server=PHOKAIA;Database=Northwind; User Id=sa; Password=Doga251200;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
+
+
+
+Deneme...ÜK was here
